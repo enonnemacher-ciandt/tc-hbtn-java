@@ -4,3 +4,4 @@ public class PrintStringVariable {
         System.out.printf("%s\n%s\n%s\n", texto, texto, texto.substring(0,9));
     }
 }
+
