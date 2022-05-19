@@ -1,3 +1,5 @@
+package comida;
+
 public class Melao extends Comida {
 
     public Melao() {

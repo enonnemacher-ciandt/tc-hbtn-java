@@ -1,3 +1,6 @@
+import humor.*;
+import comida.*;
+
 public class Program {
 
     public static void main(String[] args) {

@@ -1,3 +1,5 @@
+package comida;
+
 public abstract class Comida {
 
     protected int pontosDeFelicidade;
