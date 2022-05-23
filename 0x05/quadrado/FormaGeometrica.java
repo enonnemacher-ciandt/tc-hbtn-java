@@ -1,5 +1,3 @@
-package task4quadrado;
-
 public class FormaGeometrica {
 
     public double area(){
