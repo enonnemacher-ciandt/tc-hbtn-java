@@ -1,5 +1,3 @@
-package task1formageometrica;
-
 public class Program {
     public static void main(String[] args) {
         FormaGeometrica formaGeometrica = new FormaGeometrica();

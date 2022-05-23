@@ -1,5 +1,3 @@
-package task1formageometrica;
-
 public class FormaGeometrica {
 
     public double area(){
