@@ -23,7 +23,7 @@ public class Pedido {
         System.out.println("------- RESUMO PEDIDO -------");
         for (ItemPedido itemPedido : itens) {
             total += itemPedido.getProduto().obterPrecoLiquido() * itemPedido.getQuantidade();
-            System.out.printf("Tipo: %s  Titulo: %s Preco: %.2f  Quant: %d Total: %.2f \n",
+            System.out.printf("Tipo: %s  Titulo: %s  Preco: %.2f  Quant: %d  Total: %.2f\n",
                     itemPedido.getProduto().getClass().getSimpleName(),
                     itemPedido.getProduto().getTitulo(),
                     itemPedido.getProduto().obterPrecoLiquido(),
