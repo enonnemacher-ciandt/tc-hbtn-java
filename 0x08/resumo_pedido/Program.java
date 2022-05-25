@@ -1,5 +1,4 @@
 import provedores.*;
-import Pedido;
 import java.util.Locale;
 
 
