@@ -1,4 +1,5 @@
-package provedores;
+import Pedido;
+import provedores.ProvedorFrete;
 
 public class ProcessadorPedido {
 

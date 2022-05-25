@@ -1,6 +1,7 @@
 import provedores.*;
-
+import Pedido;
 import java.util.Locale;
+
 
 public class Program {
 
