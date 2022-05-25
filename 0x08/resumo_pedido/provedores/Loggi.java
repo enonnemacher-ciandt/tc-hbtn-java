@@ -11,6 +11,7 @@ public class Loggi implements ProvedorFrete {
         return new Frete(valor, TipoProvedorFrete.LOGGI);
     }
 
+    @Override
     public TipoProvedorFrete obterTipoProvedorFrete(){
         return TipoProvedorFrete.LOGGI;
     }

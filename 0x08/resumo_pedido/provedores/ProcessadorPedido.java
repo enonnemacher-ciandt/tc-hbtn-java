@@ -1,7 +1,5 @@
 package provedores;
 
-import Pedido;
-
 public class ProcessadorPedido {
 
     private ProvedorFrete provedorFrete;
