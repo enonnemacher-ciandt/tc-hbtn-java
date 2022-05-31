@@ -42,7 +42,8 @@ public class Banco {
 
     public boolean adicionarTransacaoCliente(String nomeAgencia, String nomeCliente, double valorTransacao) {
         Agencia buscaAgencia = buscarAgencia(nomeAgencia);
-        if (buscaAgencia != null) {
+        Cliente cliente = buscaAgencia.buscarCliente(nomeCliente);
+        if (buscaAgencia != null && cliente != null) {
             buscaAgencia.adicionarTransacaoCliente(nomeCliente, valorTransacao);
             return true;
         }
