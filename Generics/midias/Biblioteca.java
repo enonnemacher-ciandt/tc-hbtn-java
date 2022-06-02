@@ -3,13 +3,13 @@ import java.util.List;
 
 public class Biblioteca<T extends Midia> {
 
-    private List<Midia> lista = new ArrayList<>();
+    private List<T> lista = new ArrayList<>();
 
-    public void adicionarMidia(Midia valor){
+    public void adicionarMidia(T valor){
         lista.add(valor);
     }
 
-    public List<Midia> obterListaMidias(){
+    public List<T> obterListaMidias(){
         return this.lista;
     }
 }
