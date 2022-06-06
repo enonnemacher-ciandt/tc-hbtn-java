@@ -67,7 +67,7 @@ public class Blog {
     }
 
     public Map<Categorias, Set<Post>> obterTodosPostsPorCategorias() {
-        Map<Categorias, Set<Post>> listaPosts = new HashMap<>();
+        Map<Categorias, Set<Post>> listaPosts = new TreeMap<>();
 
         for (Categorias categoriasPost : Categorias.values()) {
             listaPosts.put(categoriasPost, obterPostsPorCategoria(categoriasPost));
