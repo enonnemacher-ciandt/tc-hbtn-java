@@ -1,5 +1,3 @@
-package task3contabancariacontroladatarifada;
-
 import java.util.Locale;
 
 public class Program {
