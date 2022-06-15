@@ -5,7 +5,7 @@ import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SerializarEstudantes<Estudante> {
+public class SerializarEstudantes<T extends Estudante> {
 
     private String nomeArquivo;
 
@@ -13,7 +13,7 @@ public class SerializarEstudantes<Estudante> {
         this.nomeArquivo = nomeArquivo;
     }
 
-    public void serializar(List<Estudante> listaEstudantes) {
+    public void serializar(List<T> listaEstudantes) {
         try {
             FileOutputStream fileOutputStream = new FileOutputStream(this.nomeArquivo);
             ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
@@ -24,12 +24,12 @@ public class SerializarEstudantes<Estudante> {
         }
     }
 
-    public List<Estudante> desserializar() {
-        List<Estudante> listaEstudantes = new ArrayList<Estudante>();
+    public List<T> desserializar() {
+        List<T> listaEstudantes = new ArrayList<>();
         try {
             FileInputStream fileInputStream = new FileInputStream(this.nomeArquivo);
             ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
-            listaEstudantes = (List<Estudante>) objectInputStream.readObject();
+            listaEstudantes = (List<T>) objectInputStream.readObject();
             objectInputStream.close();
         } catch (Exception e) {
             System.out.println("Nao foi possivel desserializar");
